@@ -8,9 +8,42 @@
       CSS controls how the page looks (colors, fonts, spacing).
       Keeping CSS in its own file is a best practice—it keeps HTML clean.-->
   <link rel="stylesheet" href="style.css">
+
+  <style>
+    /* Navigation bar styles */
+    .nav-bar {
+      background-color: #3a3a5c;
+      padding: 12px 24px;
+      display: flex;
+      gap: 24px;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+    .nav-bar a {
+      color: #ffffff;
+      text-decoration: none;
+      font-size: 16px;
+      font-weight: bold;
+      padding: 6px 14px;
+      border-radius: 6px;
+      transition: background-color 0.2s;
+    }
+    .nav-bar a:hover {
+      background-color: rgba(255, 255, 255, 0.2);
+    }
+    .nav-bar a.active {
+      background-color: rgba(255, 255, 255, 0.3);
+    }
+  </style>
 </head>
 
 <body>
+
+  <!--Navigation bar at the top of every page-->
+  <nav class="nav-bar">
+    <a href="index.html" class="active">🏠 Home</a>
+    <a href="games.html">🎮 Games</a>
+  </nav>
 
   <!--This is the title at the top of the page-->
   <h1 class="page-title">Nailea Lopez's Webpage</h1>
@@ -61,7 +94,7 @@
   <ul>
     <li><a href="https://thegreatbritishbakeoff.co.uk/" target="_blank">The Great British Baking Show</a> &mdash; My favorite comfort show and the best background noise for cooking.</li>
     <li><a href="https://www.cbsnews.com/news/kentucky-derby-horses-2026/" target="_blank">Anything Horses</a> &mdash; I've been in the saddle since I was 6. It's my preferred hobby and happiest place.</li>
-    <li><a href="https://www.google.com/search?q=cake+inspo+collage+2026&sca_esv=43a6c5a008a39361&rlz=1C1MYPO_enUS1177US1177&udm=2&biw=1280&bih=665&sxsrf=ANbL-n77LBTf6LSYJnHwR8sAz30bcYW_kQ%3A1778520631793&ei=NxICaoyAMNGchbIP5avo6QI#sv=CAMSVhoyKhBlLUVfT1Axaml5YVpYTUFNMg5FX09QMWppeWFaWE1BTToOVUZzVUx4RWJ2RmZvT00gBCocCgZtb3NhaWMSEGUtRV9PUDFqaXlhWlhNQU0YADABGAcgiIe14AVKCBABGAEgASgB" target="_blank">I enjoy decorating cakes and making pastries any chance I get!</li>
+    <li><a href="https://www.google.com/search?q=cake+inspo+collage+2026&sca_esv=43a6c5a008a39361&rlz=1C1MYPO_enUS1177US1177&udm=2&biw=1280&bih=665&sxsrf=ANbL-n77LBTf6LSYJnHwR8sAz30bcYW_kQ%3A1778520631793&ei=NxICaoyAMNGchbIP5avo6QI#sv=CAMSVhoyKhBlLUVfT1Axaml5YVpYTUFNMg5FX09QMWppeWFaWE1BTToOVUZzVUx4RWJ2RmZvT00gBCocCgZtb3NhaWMSEGUtRV9PUDFqaXlhWlhNQU0YADABGAcgiIe14AVKCBABGAEgASgB" target="_blank">I enjoy decorating cakes and making pastries any chance I get!</a></li>
   </ul>
 
   <hr />
